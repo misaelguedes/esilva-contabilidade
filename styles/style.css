@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEEEEE;
+}
+
+header {
+    background-color: #FFFFFF;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    border-bottom: 10px solid #3D473F;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.185);
+}
+
+h2 {
+    color: rgb(44, 44, 44);
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 250px;
+    transition: all 0.2s;
+}
+
+.logo:hover {
+    scale: 1.1;
+}
+
+.sociais i {
+    color: rgb(44, 44, 44);
+    width: 50px;
+    transition: all 0.2s;
+}
+
+.sociais i:hover {
+    scale: 1.2;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+}
+
+.container {
+    display: block;
+    height: 350px;
+    margin: 25px;
+    background-image: linear-gradient(to top, #3D473F, transparent), url(../assets/image.jpg);
+    background-position: right;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.texto {
+    margin: -25px 25px 25px 25px;
+    background-color: #3D473F;
+    color: #FFFFFF;
+    padding: 30px;
+    text-align: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.localizacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo2 {
+    max-width: 30%;
+    margin-right: 20px;
+}
+
+.whats {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.whats img {
+    width: 100px;
+    transition: all 0.2s;
+}
+
+.whats img:hover {
+    scale: 1.1;
+}
+
+footer {
+    background-color: #FFFFFF;
+    color: rgb(44, 44, 44);
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    border-top: 10px solid #3D473F;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.185);
+}
+
+footer img {
+    width: 80px;
+    margin-bottom: 5px;
+    transition: all 0.2s;
+}
+
+footer img:hover {
+    scale: 1.1;
+}
+
+@media screen and (max-width: 1000px) {
+    .localizacao {
+        flex-direction: column;
+    }
+    
+    .contato {
+        display: none;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .mapa {
+        height: 5%;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+    
+    .logo {
+        width: 150px;
+    }
+
+    .sociais {
+        padding: 10px;
+    }
+
+    .sociais i {
+        width: 15px;
+        margin-left: 10px;
+    }
+
+    .mapa {
+        height: 5%;
+    }
+
+    .whats img {
+        width: 70px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+
+    footer img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .whats img {
+        width: 50px;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+    
+    footer {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 304px) {
+    .texto h1 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.5em;
+    }
+    
+    footer {
+        font-size: 5px;
+    }
+}
